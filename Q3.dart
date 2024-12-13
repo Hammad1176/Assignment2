@@ -1,8 +1,4 @@
-import 'dart:isolate';
-import 'dart:math';
-
 void main() {
-  int? index = 0;
   List<String> days = [];
 
   days.addAll([
@@ -14,17 +10,24 @@ void main() {
     "Thursday",
     "Friday"
   ]);
-  try {
-    days.forEach((element) {
-      int index = days.indexOf(element);
-      print("$element index position is $index ");
-      days.removeAt(index);
-      print(days);
-    });
-  } catch (e) {
-    
-  }
-} 
+
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+  print(days);
+  days.removeLast();
+}
 
 
   // days.removeWhere((i) => i.length < 10);
